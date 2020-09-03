@@ -2,14 +2,14 @@
 
 This allows you to watch whatever you want on VLC and when video ends and VLC closes this will shut down your pc.
 
-## Why do u need it?
+## Why do u need it? 🤔
 
 - This is very useful if u watch anything on TV and u going to sleep and due to this u don't need to shut down PC manually.
 - You can also change name of process in config.js so this can be used for any app running on your PC.
 - Also this is under MIT Licence so u can do anything with code and make ur own projects with that.
 
 
-## Installation
+## Installation 🚀
 
 1. Download vlc-auto-shutdown from github
 2. Unzip folder and grab it where do you want
@@ -17,14 +17,14 @@ This allows you to watch whatever you want on VLC and when video ends and VLC cl
 4. Now just move "VLC Turn off" shortcut to your Desktop or anywhere where you want for better access (optional)
 
 
-## How to use
+## How to use 😎
 
 - Double click at "VLC turn off" shortcut
 - Now if u have VLC turned on this will inform you every 10s(by default) that VLC is still running
 - If VLC closes then this will wait 15s(by default) while you can press any key to abort shutdown and close this script, otherwise PC will shutdown in 3sec.
 
 
-## Configuration (optional)
+## Configuration (optional) 🤓
 
 ##### For configuration you will need any text editor, you can use Notepad if u don't have anthing else.
 
