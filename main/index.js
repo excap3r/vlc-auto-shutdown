@@ -8,14 +8,14 @@ const checkVLC = async () => {
 
   const time = new Date().toLocaleTimeString();
 
+  console.clear();
+
   if (list.length) {
-    console.clear();
     return console.log(`[${time}] ${process_name_rendered} still runnning`);
   }
 
   clearInterval(AutoCheck);
 
-  console.clear();
   console.log(`[${time}] ${process_name_rendered} not running, this device is turning off in ${shutdown_timeout}s.`);
 
   setTimeout(() => {
@@ -35,6 +35,6 @@ const checkVLC = async () => {
 };
 
 console.clear();
-console.log(`Succesfully started, VLC will be checked every ${check_interval_timeout}s..`);
+console.log(`Successfully started, VLC will be checked every ${check_interval_timeout}s..`);
 
 const AutoCheck = setInterval(() => checkVLC(), check_interval_timeout * 1000);
