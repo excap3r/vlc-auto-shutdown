@@ -11,6 +11,8 @@ This allows you to watch whatever you want on VLC and when video ends and VLC cl
 
 ## Installation 🚀
 
+- Requirements for installation: [Nodejs](nodejs.org), npm (installed with Node.js)
+
 1. Download vlc-auto-shutdown from github
 2. Unzip folder and grab it where do you want
 3. Double click on install.bat and wait for all modules to install
