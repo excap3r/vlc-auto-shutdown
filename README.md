@@ -32,4 +32,4 @@ This allows you to watch whatever you want on VLC and when video ends and VLC cl
 
 - Change shutdown timeout: open config.js and change shutdown_timeout value to number in seconds that u want to use.
 
-- Change process name: open config.js and change process_name to name of process that u want to use, for better documentation of finding process look at [Find process](https://github.com/yibn2008/find-process)
+- Change process name: open config.js and change process_name to name of process that u want to use, for better documentation of finding process look at [find process](https://github.com/yibn2008/find-process)
