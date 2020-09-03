@@ -1,6 +1,7 @@
 const { exec } = require("shelljs");
 const find = require("find-process");
 const { process_name, shutdown_timeout, check_interval_timeout } = require("../config/config");
+const process_name_rendered = process_name.split('.')[0];
 
 const checkVLC = async () => {
   let list = await find("name", process_name, true);
@@ -9,13 +10,13 @@ const checkVLC = async () => {
 
   if (list.length) {
     console.clear();
-    return console.log(`[${time}] ${process_name.toUpperCase()} still runnning`);
+    return console.log(`[${time}] ${process_name_rendered} still runnning`);
   }
 
   clearInterval(AutoCheck);
 
   console.clear();
-  console.log(`[${time}] ${process_name.toUpperCase()} not running, this device is turning off in ${shutdown_timeout}s.`);
+  console.log(`[${time}] ${process_name_rendered} not running, this device is turning off in ${shutdown_timeout}s.`);
 
   setTimeout(() => {
     exec("shutdown /s /f /t 3");
