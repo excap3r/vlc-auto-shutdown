@@ -1,0 +1,1 @@
+# vlc-auto-shutdown
