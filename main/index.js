@@ -4,7 +4,7 @@ const { process_name, shutdown_timeout, check_interval_timeout } = require("../c
 const process_name_rendered = process_name.split('.')[0];
 
 const checkVLC = async () => {
-  let list = await find("name", process_name, true);
+  let list = await find("name", process_name, false);
 
   const time = new Date().toLocaleTimeString();
 
