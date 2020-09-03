@@ -12,7 +12,7 @@ This allows you to watch whatever you want on VLC and when video ends and VLC cl
 ## Installation 🚀
 
 - Requirements for installation:
-  - [Nodejs](https://nodejs.org/)
+  - [Node.js](https://nodejs.org/)
   - [npm](https://www.npmjs.com/get-npm) (installed with Node.js)
 
 1. Download last vlc-auto-shutdown [release](https://github.com/JakubSladek/vlc-auto-shutdown/releases)
