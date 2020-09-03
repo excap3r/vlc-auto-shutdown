@@ -13,8 +13,8 @@ This allows you to watch whatever you want on VLC and when video ends and VLC cl
 
 1. Download vlc-auto-shutdown from github
 2. Unzip folder and grab it where do you want
-3. Double click on install.bat
-4. Now just move "VLC turn off" shortcut to Desktop or anywhere where you want for better access (optional)
+3. Double click on install.bat and wait for all modules to install
+4. Now just move "VLC Turn off" shortcut to your Desktop or anywhere where you want for better access (optional)
 
 
 ## How to use
