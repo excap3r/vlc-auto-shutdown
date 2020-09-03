@@ -1,4 +1,3 @@
-[fork my repository](https://github.com/JakubSladek/vlc-auto-shutdown/fork)
 # VLC auto shutdown
 
 This allows you to watch whatever you want on VLC and when video ends and VLC closes this will shut down your pc.
