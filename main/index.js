@@ -1,7 +1,7 @@
 const { exec } = require("shelljs");
 const find = require("find-process");
 const { process_name, shutdown_timeout, check_interval_timeout } = require("../config/config");
-const process_name_rendered = process_name.split('.')[0];
+const process_name_rendered = process_name.split(".")[0];
 
 const checkVLC = async () => {
   let list = await find("name", process_name, false);
@@ -20,7 +20,6 @@ const checkVLC = async () => {
 
   setTimeout(() => {
     exec("shutdown /s /f /t 3");
-    process.exit(0);
   }, shutdown_timeout * 1000);
 
   console.log("Press any key to abort..");
