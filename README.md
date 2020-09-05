@@ -1,6 +1,6 @@
 # VLC auto shutdown [Win10]
 
-This allows you to watch whatever you want on VLC and when video ends and VLC closes this will shut down your pc.
+This allows you to watch whatever you want on VLC and when video ends and VLC closes this will shut down your PC.
 
 ## Why do u need it? 🤔
 
