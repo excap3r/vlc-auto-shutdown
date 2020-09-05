@@ -1,24 +1,22 @@
-const { exec } = require("shelljs");
 const find = require("find-process");
+const { exec } = require("shelljs");
 const { process_name, shutdown_timeout, check_interval_timeout } = require("../config/config");
-const process_name_rendered = process_name.split(".")[0];
+
+const process_name_rendered = process_name.includes(".") ? process_name.split(".")[0] : process_name;
 
 const checkVLC = async () => {
-  let list = await find("name", process_name, false);
-
   const time = new Date().toLocaleTimeString();
+  const list = await find("name", process_name, false);
 
   console.clear();
 
-  if (list.length) {
-    return console.log(`[${time}] ${process_name_rendered} still runnning`);
-  }
+  if (list.length) return console.log(`[${time}] ${process_name_rendered} is still runnning.`);
 
-  clearInterval(AutoCheck);
+  if (AutoCheck) clearInterval(AutoCheck);
 
-  console.log(`[${time}] ${process_name_rendered} not running, this device is turning off in ${shutdown_timeout}s.`);
+  console.log(`[${time}] ${process_name_rendered} not running, this device is will be turned off after ${shutdown_timeout}s.`);
 
-  setTimeout(() => {
+  const shutdown = setTimeout(() => {
     exec("shutdown /s /f /t 3");
   }, shutdown_timeout * 1000);
 
@@ -28,12 +26,13 @@ const checkVLC = async () => {
   process.stdin.setRawMode(true);
   process.stdin.resume();
   process.stdin.on("data", () => {
+    clearTimeout(shutdown);
     console.log("\nShutdown cancelled..");
-    setTimeout(() => process.exit(0), 1000);
+    setTimeout(() => process.exit(0), 1500);
   });
 };
 
 console.clear();
-console.log(`Successfully started, VLC will be checked every ${check_interval_timeout}s..`);
+console.log(`Running, ${process_name_rendered} will be checked after ${check_interval_timeout} sec..`);
 
 const AutoCheck = setInterval(() => checkVLC(), check_interval_timeout * 1000);
