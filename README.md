@@ -23,9 +23,9 @@ This allows you to watch whatever you want on VLC and when video ends and VLC cl
 
 ## How to use 😎
 
-- Double click at "VLC turn off" shortcut
-- Now if u have VLC turned on this will inform you every 10s(by default) that VLC is still running
-- If VLC closes then this will wait 15s(by default) while you can press any key to abort shutdown and close this script, otherwise PC will shutdown in 3sec.
+- Double click on start.bat or your shortcut
+- If u have VLC turned on this will tell you every 10s(by default) that VLC is still running
+- When VLC closes then this will wait 15s(by default) while you can press any key to abort shutdown and close this script
 
 
 ## Configuration (optional) 🤓
