@@ -23,6 +23,7 @@ This allows you to watch whatever you want on VLC and when video ends and VLC cl
 
 ## How to use 😎
 
+- Be sure you have checked "Quit at the end of playlist" option under Media in VLC
 - Double click on start.bat or your shortcut
 - If u have VLC turned on this will tell you every 10s(by default) that VLC is still running
 - When VLC closes then this will wait 15s(by default) while you can press any key to abort shutdown and close this script
